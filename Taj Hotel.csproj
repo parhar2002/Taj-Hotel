@@ -1,0 +1,377 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{54EEE54A-0E3D-4758-9BFF-A4DBC0260186}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Taj_Hotel</RootNamespace>
+    <AssemblyName>Taj Hotel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44363</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Ahome.aspx" />
+    <Content Include="Admin\DinningManage.aspx" />
+    <Content Include="Admin\EventMange.aspx" />
+    <Content Include="Admin\feedmanage.aspx" />
+    <Content Include="Admin\Mange_Room.aspx" />
+    <Content Include="Admin\OfferManage.aspx" />
+    <Content Include="Admin\Resetpass.aspx" />
+    <Content Include="Admin\Userbooking.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="Eventbooking.aspx" />
+    <Content Include="image\dots.svg" />
+    <Content Include="image\mc_symbol.svg" />
+    <Content Include="image\paymentbg.jpg" />
+    <Content Include="image\pey.png" />
+    <Content Include="image\verified-badge.svg" />
+    <Content Include="Offersbooking.aspx" />
+    <Content Include="Peyment.aspx" />
+    <Content Include="Roombooking.aspx" />
+    <Content Include="succesfull.aspx" />
+    <Content Include="Table.aspx" />
+    <Content Include="Event.aspx" />
+    <Content Include="gallary.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="image\cntct.png" />
+    <Content Include="image\d1.jpg" />
+    <Content Include="image\d2.jpg" />
+    <Content Include="image\d3.jpg" />
+    <Content Include="image\d4.jpg" />
+    <Content Include="image\d5.jpg" />
+    <Content Include="image\d6.jpg" />
+    <Content Include="image\fb.png" />
+    <Content Include="image\feed.ico" />
+    <Content Include="image\ga10.jpg" />
+    <Content Include="image\ga11.jpg" />
+    <Content Include="image\ga12.jpg" />
+    <Content Include="image\ga1.jpg" />
+    <Content Include="image\ga2.jpg" />
+    <Content Include="image\ga3.jpg" />
+    <Content Include="image\ga4.jpg" />
+    <Content Include="image\ga5.jpg" />
+    <Content Include="image\ga6.jpg" />
+    <Content Include="image\ga7.jpg" />
+    <Content Include="image\ga8.jpg" />
+    <Content Include="image\ga9.jpg" />
+    <Content Include="image\g_logo.png" />
+    <Content Include="image\gateway.jpg" />
+    <Content Include="image\insta.png" />
+    <Content Include="image\admin.png" />
+    <Content Include="image\loginimg.jpg" />
+    <Content Include="image\logo.png" />
+    <Content Include="image\indeximg.jpg" />
+    <Content Include="image\t_logo.png" />
+    <Content Include="image\taj1.jpg" />
+    <Content Include="image\tw.png" />
+    <Content Include="image\v_logo.png" />
+    <Content Include="image\vivanta.jpg" />
+    <Content Include="image\wp.png" />
+    <Content Include="image\yt.png" />
+    <Content Include="css\style.css" />
+    <Content Include="login.aspx" />
+    <Content Include="Offer.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="Resetpass.aspx" />
+    <Content Include="room.aspx" />
+    <Content Include="Tablebooking.aspx" />
+    <Content Include="userview.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminHome.Master.cs">
+      <DependentUpon>AdminHome.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminHome.Master.designer.cs">
+      <DependentUpon>AdminHome.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ahome.aspx.cs">
+      <DependentUpon>Ahome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Ahome.aspx.designer.cs">
+      <DependentUpon>Ahome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DinningManage.aspx.cs">
+      <DependentUpon>DinningManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DinningManage.aspx.designer.cs">
+      <DependentUpon>DinningManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EventMange.aspx.cs">
+      <DependentUpon>EventMange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EventMange.aspx.designer.cs">
+      <DependentUpon>EventMange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\feedmanage.aspx.cs">
+      <DependentUpon>feedmanage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\feedmanage.aspx.designer.cs">
+      <DependentUpon>feedmanage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Mange_Room.aspx.cs">
+      <DependentUpon>Mange_Room.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Mange_Room.aspx.designer.cs">
+      <DependentUpon>Mange_Room.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OfferManage.aspx.cs">
+      <DependentUpon>OfferManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OfferManage.aspx.designer.cs">
+      <DependentUpon>OfferManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Resetpass.aspx.cs">
+      <DependentUpon>Resetpass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Resetpass.aspx.designer.cs">
+      <DependentUpon>Resetpass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Userbooking.aspx.cs">
+      <DependentUpon>Userbooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Userbooking.aspx.designer.cs">
+      <DependentUpon>Userbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Eventbooking.aspx.cs">
+      <DependentUpon>Eventbooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Eventbooking.aspx.designer.cs">
+      <DependentUpon>Eventbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Offersbooking.aspx.cs">
+      <DependentUpon>Offersbooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Offersbooking.aspx.designer.cs">
+      <DependentUpon>Offersbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peyment.aspx.cs">
+      <DependentUpon>Peyment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peyment.aspx.designer.cs">
+      <DependentUpon>Peyment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Roombooking.aspx.cs">
+      <DependentUpon>Roombooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Roombooking.aspx.designer.cs">
+      <DependentUpon>Roombooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sqlCommand.cs" />
+    <Compile Include="succesfull.aspx.cs">
+      <DependentUpon>succesfull.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="succesfull.aspx.designer.cs">
+      <DependentUpon>succesfull.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Table.aspx.cs">
+      <DependentUpon>Table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Table.aspx.designer.cs">
+      <DependentUpon>Table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event.aspx.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Event.aspx.designer.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gallary.aspx.cs">
+      <DependentUpon>gallary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.Master.cs">
+      <DependentUpon>home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.Master.designer.cs">
+      <DependentUpon>home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Offer.aspx.cs">
+      <DependentUpon>Offer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Offer.aspx.designer.cs">
+      <DependentUpon>Offer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resetpass.aspx.cs">
+      <DependentUpon>Resetpass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resetpass.aspx.designer.cs">
+      <DependentUpon>Resetpass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="room.aspx.cs">
+      <DependentUpon>room.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="room.aspx.designer.cs">
+      <DependentUpon>room.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tablebooking.aspx.cs">
+      <DependentUpon>Tablebooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tablebooking.aspx.designer.cs">
+      <DependentUpon>Tablebooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userview.aspx.cs">
+      <DependentUpon>userview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userview.aspx.designer.cs">
+      <DependentUpon>userview.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="home.Master" />
+    <Content Include="Admin\AdminHome.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64303</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44363/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
