@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminHome.master.cs" Inherits="Taj_Hotel.Admin.AdminHome" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Admin Panel</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table style="width: 100%" border="0" >
+ <tr>
+     <td style="width: 20%" rowspan="2">
+      <asp:Image ID="Image1" runat="server" ImageUrl="~/image/t_logo.png" Width="109px" Height="88px" BorderColor="White" BorderStyle="Double" />
+                
+      </td>
+     <td style="width: 20%" rowspan="2">
+         <asp:Label ID="Label1" runat="server" Text="Employee Panel" Font-Size="40pt"></asp:Label>
+      </td>     
+      
+        <td style="width: 10%" align="right">
+               <asp:Button ID="Button1" runat="server" Text="Logout"  ValidationGroup="Forward" Font-Bold="True" 
+                    Font-Size="X-Large" ForeColor="#663300" PostBackUrl="~/login.aspx"  />
+            
+            </td>
+        </tr>
+        </table>
+ <table style="width: 100%" border="0" >
+    <tr>
+        <td align=center >
+            &nbsp;</td>
+        
+         <td align=center >
+              &nbsp;</td>
+         <td align=center >
+              &nbsp;</td>
+        <td align=center >
+            &nbsp;</td>
+        
+         <td align=center >
+             &nbsp;</td>
+         <td align=center >
+             &nbsp;</td>        
+    </tr>
+    <tr>
+        <td align=center >
+            <asp:ImageButton ID="ImageButton1" runat="server" src="../image/adminHome/Home.png" style="height: 103px; width: 94px" OnClick="ImageButton1_Click" CausesValidation="False" />           
+        </td>
+        
+         <td align=center >
+              <asp:ImageButton ID="ImageButton2" runat="server" src="../image/adminHome/offers.png" OnClick="ImageButton2_Click" Height="98px" Width="97px" CausesValidation="False" />    
+        </td>
+         <td align=center >
+              <asp:ImageButton ID="ImageButton3" runat="server" src="../image/adminHome/rooms.png" OnClick="ImageButton3_Click" Height="98px" Width="97px" CausesValidation="False" />    
+        </td>
+        <td align=center >
+<asp:ImageButton ID="ImageButton4" runat="server" src="../image/adminHome/banqu.png" OnClick="ImageButton4_Click" Height="98px" Width="97px" CausesValidation="False" />        </td>
+        
+         <td align=center >
+<asp:ImageButton ID="ImageButton5" runat="server" src="../image/adminHome/Event.png" OnClick="ImageButton5_Click" Height="98px" Width="112px" CausesValidation="False" />        </td>
+        
+         <td align=center >
+<asp:ImageButton ID="ImageButton6" runat="server" src="../image/adminHome/feedback.png" OnClick="ImageButton6_Click" Height="98px" Width="120px" CausesValidation="False" />        </td>
+         <td align=center >
+<asp:ImageButton ID="ImageButton7" runat="server" src="../image/adminHome/user.png" OnClick="ImageButton7_Click" Height="98px" Width="97px" CausesValidation="False" />        </td>
+         
+        <td align=center >
+    </tr>
+    <tr>
+        <td align=center >
+            Home</td>
+        
+         <td align=center >
+              Offers</td>
+         <td align=center >
+              Rooms</td>
+        <td align=center >
+            Banquet        </td>
+        
+        <td align=center >
+            Event        </td>
+        
+         <td align=center >
+             Feedback</td>
+         <td align=center >
+             User</td>        
+    </tr>
+   
+    
+    </table>
+    
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        
+    </form>
+</body>
+</html>

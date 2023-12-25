@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="home.master.cs" Inherits="Taj_Hotel.home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style type="text/css">
+        .auto-style2 {
+            width: 1350px;
+            height: 19px;
+            margin-left: 0px;
+        }
+        .auto-style3 {
+            width: 100%;
+            height: 68px;
+        }
+         .auto-style4 {
+             width: 30%;
+         }
+         .auto-style5 {
+             width: 18%;
+         }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+    <table style="width: 100%" border="0"   bgcolor="#fff">
+            <tr>
+                 <td class="auto-style5" >
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/image/t_logo.png" Width="109px" Height="88px" BorderColor="White" BorderStyle="Double" />
+                </td>
+                <td align="center">
+                    <asp:Label ID="Label1" runat="server" Text="The Taj Hotel " Font-Size="70px" ForeColor="#663300"></asp:Label></td>
+
+            <td style="width: 10%" align="right">
+                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/image/userview.jpeg"  Width="79px" Height="79px" PostBackUrl="~/userview.aspx"/>
+            </td>
+            <td style="width: 10%" align="right">
+                    <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="../image/adminHome/feedback.png"  Width="79px" Height="79px" PostBackUrl="~/contact.aspx"/>
+            </td>
+            <td style="width: 10%" align="right">
+               <asp:Button ID="Button1" runat="server" Text="Logout" Font-Bold="True" 
+                    Font-Size="X-Large" ForeColor="#663300"  PostBackUrl="~/login.aspx" Visible="False" />
+            </td>
+                
+        </tr>
+        
+    </table>
+    
+    <table style="width: 100%" border="0"   bgcolor="#996600">
+    <tr>
+        <td align=center >
+           <font size="+2"> <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="#FFCC99" CausesValidation="False" OnClick="LinkButton1_Click" >Home</asp:LinkButton></font>
+        </td>
+        
+         <td align=center >
+           <font size="+2"> <asp:LinkButton ID="LinkButton3" runat="server" ForeColor="#FFCC99" PostBackUrl="~/gallary.aspx" CausesValidation="False" >Gallery</asp:LinkButton></font>
+        </td>
+         <td align=center >
+           <font size="+2"> <asp:LinkButton ID="LinkButton4" runat="server" ForeColor="#FFCC99"  PostBackUrl="~/Offer.aspx" CausesValidation="False">Offers</asp:LinkButton></font>
+        </td>
+         <td align=center >
+           <font size="+2"> <asp:LinkButton ID="LinkButton5" runat="server" ForeColor="#FFCC99"  PostBackUrl="~/room.aspx" CausesValidation="False">Rooms</asp:LinkButton></font>
+        </td>
+         <td align=center >
+           <font size="+2"> <asp:LinkButton ID="LinkButton6" runat="server" ForeColor="#FFCC99" PostBackUrl="~/Event.aspx" CausesValidation="False">Events</asp:LinkButton></font>
+        </td>
+        <td align=center >
+           <font size="+2"> <asp:LinkButton ID="LinkButton8" runat="server" ForeColor="#FFCC99" PostBackUrl="~/Table.aspx" CausesValidation="False">Dining</asp:LinkButton></font>
+        </td>
+        
+    </tr>
+    </table>
+    
+    
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+     
+       
+    </form>
+</body>
+</html>
